@@ -124,7 +124,7 @@ export const PORTFOLIO = {
         'Développement et maintenance full-stack en Angular et Java.',
         'Participation à la montée de version Angular 11 → 14 (dépendances, compatibilité, validation).',
         'Correction d’anomalies et amélioration continue.',
-        'Collaboration avec l’équipe back-end Java en contexte projet exigeant.',
+        "Participation à la phase RUN du projet",
       ],
       stack: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Java', 'GitLab', 'SQL', 'NoSQL', 'Jira'],
     },
