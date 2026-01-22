@@ -1,0 +1,16 @@
+<section class="section">
+  <h2>Contact</h2>
+
+  <div class="card">
+    <p>Tu peux me contacter ici :</p>
+
+    <div class="contact-grid">
+      <a class="btn primary" [href]="mailto()">Envoyer un email</a>
+      <a class="btn" [href]="p.profile.linkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="btn" [href]="p.profile.github" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="btn" [href]="p.profile.jeu" target="_blank" rel="noreferrer">CV en jeu</a>
+    </div>
+
+    <p class="muted small">Email : {{ p.profile.email }}</p>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<section class="hero">
+  <div class="card hero-card">
+    <h1>{{ p.profile.name }}</h1>
+    <p class="lead">{{ p.profile.role }}</p>
+    <p class="muted">{{ p.profile.pitch }}</p>
+
+    <div class="chips">
+      <span class="chip" *ngFor="let s of p.profile.skills">{{ s }}</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" routerLink="/projets">Voir mes projets</a>
+      <a class="btn" routerLink="/experience">Mon expérience</a>
+      <a class="btn" routerLink="/formation">Mes formations</a>
+      <a class="btn ghost" [href]="p.profile.cvUrl" target="_blank" rel="noreferrer">CV</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card" *ngFor="let proj of p.projects">
+      <h3>{{ proj.title }}</h3>
+      <p class="muted">{{ proj.subtitle }}</p>
+      <p>{{ proj.description }}</p>
+      <div class="chips">
+        <span class="chip" *ngFor="let t of proj.stack">{{ t }}</span>
+      </div>
+    </div>
+  </div>
+</section>

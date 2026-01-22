@@ -1,0 +1,21 @@
+<section class="section">
+  <h2>Projets</h2>
+
+  <div class="grid">
+    <div class="card" *ngFor="let proj of p.projects">
+      <h3>{{ proj.title }}</h3>
+      <p class="muted">{{ proj.subtitle }}</p>
+      <p>{{ proj.description }}</p>
+
+      <div class="chips">
+        <span class="chip" *ngFor="let t of proj.stack">{{ t }}</span>
+      </div>
+
+      <div class="links" *ngIf="proj.links?.length">
+        <a class="link" *ngFor="let l of proj.links" [href]="l.url" target="_blank" rel="noreferrer">
+          {{ l.label }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

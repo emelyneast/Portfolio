@@ -1,0 +1,10 @@
+.section {
+  display: grid;
+  gap: 14px;
+}
+.contact-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}

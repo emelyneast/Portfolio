@@ -1,0 +1,12 @@
+<section class="section">
+  <h2>À propos</h2>
+
+  <div class="card">
+    <p>{{ p.profile.pitch }}</p>
+
+    <h3>Compétences</h3>
+    <div class="chips">
+      <span class="chip" *ngFor="let s of p.profile.skills">{{ s }}</span>
+    </div>
+  </div>
+</section>

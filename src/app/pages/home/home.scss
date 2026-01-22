@@ -1,0 +1,29 @@
+.hero {
+  display: grid;
+  gap: 14px;
+}
+.hero-card h1 {
+  margin: 0 0 6px;
+  font-size: 34px;
+}
+.lead {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 840px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

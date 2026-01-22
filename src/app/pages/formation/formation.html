@@ -1,0 +1,11 @@
+<section class="section">
+  <h2>Formations</h2>
+
+  <div class="stack">
+    <div class="card" *ngFor="let e of p.formation">
+      <h3>{{ e.title }} — {{ e.company }}</h3>
+      <p class="muted">{{ e.period }}</p>
+
+    </div>
+  </div>
+</section>
